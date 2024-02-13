@@ -17,7 +17,7 @@ Este es un proyecto de Django para gestionar quedadas entre usuarios.
   Asegúrate de tener PostgreSQL instalado y configurado
   Edita la configuración de la base de datos en proyecto_quedadas/settings.py
 
-5 Aplicar Migraciones:
+5. Aplicar Migraciones:
   python manage.py makemigrations
   python manage.py migrate
   
