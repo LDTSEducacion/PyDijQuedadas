@@ -7,7 +7,7 @@ Este es un proyecto de Django para gestionar quedadas entre usuarios.
 1. Instalación de Python:
    - Asegúrate de tener Python instalado en tu sistema. Puedes descargarlo desde [python.org](https://www.python.org/).
 
-2. Clonar el Repositorio:
+2. Clonar el Repositorio
 
 3. Instalación de Dependencias:
    Navega hasta el directorio del proyecto y ejecuta:
