@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Quedadas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Listar Quedadas</h1>
+        <ul class="list-group mt-3">
+            {% for quedada in quedadas %}
+            <li class="list-group-item">
+                {{ quedada.nombre }}
+                <form method="post" action="{% url 'eliminar_quedada' quedada.id %}" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger btn-sm ml-2">Eliminar</button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'vista_principal' %}" class="btn btn-primary mt-3">Volver</a>
+    </div>
+</body>
+</html>
